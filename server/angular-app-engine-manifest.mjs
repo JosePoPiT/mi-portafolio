@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/mi-portafolio',
+  basePath: '/',
   supportedLocales: {
   "en-US": ""
 },

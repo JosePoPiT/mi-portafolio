@@ -1,8 +1,8 @@
 {
   "routes": {
-    "/mi-portafolio": {},
-    "/mi-portafolio/about": {},
-    "/mi-portafolio/contact": {},
-    "/mi-portafolio/projects": {}
+    "/": {},
+    "/about": {},
+    "/contact": {},
+    "/projects": {}
   }
 }
