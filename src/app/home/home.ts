@@ -92,7 +92,7 @@ export class Home {
         es: 'IndicadoresApp',
         en: 'IndicadoresApp'
       },
-      url: 'https://indicadoresapp.vercel.app/',
+      url: 'https://josepopit.github.io/indicadoresApp/indicadores',
       desc: {
         es: 'IndicadoresApp es una aplicación web desarrollada en Angular que permite consultar, visualizar y comparar los principales indicadores económicos de forma moderna, responsiva y amigable. Incluye gráficos interactivos, tablas dinámicas, modo claro/oscuro y una experiencia de usuario optimizada tanto para desktop como para dispositivos móviles.',
         en: 'IndicadoresApp is a web application developed in Angular that allows you to consult, visualize, and compare key economic indicators in a modern, responsive, and user-friendly way. Includes interactive charts, dynamic tables, light/dark mode, and an optimized user experience for both desktop and mobile devices.'
@@ -103,7 +103,7 @@ export class Home {
         es: 'LOL Champions Explorer',
         en: 'LOL Champions Explorer'
       },
-      url: 'https://lol-champions-explorer.vercel.app/',
+      url: 'https://josepopit.github.io/league-of-legends-page/campeones/portada',
       desc: {
         es: 'Desarrollé una aplicación web completa utilizando Angular 12 que permite a los usuarios explorar y descubrir el universo de campeones de League of Legends. Integra la API oficial de Riot Games para información en tiempo real sobre todos los campeones del juego.',
         en: 'I developed a complete web application using Angular 12 that allows users to explore and discover the universe of League of Legends champions. Integrates the official Riot Games API to provide real-time information on all game champions.'
