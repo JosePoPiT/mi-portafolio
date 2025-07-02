@@ -1,0 +1,27 @@
+<svg width="80" height="160" viewBox="0 0 80 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="gradPhone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff0"/>
+      <stop offset="100%" stop-color="#f0f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Marco exterior pixelado -->
+  <rect x="2" y="2" width="76" height="156" fill="none" stroke="url(#gradPhone)" stroke-width="4" filter="url(#glow3)"/>
+
+  <!-- Pantalla -->
+  <rect x="12" y="24" width="56" height="96" fill="#000" stroke="#ff0" stroke-width="2"/>
+
+  <!-- Altavoz pixel -->
+  <rect x="32" y="12" width="16" height="4" fill="#0ff"/>
+
+  <!-- Botón inferior pixel -->
+  <rect x="36" y="132" width="8" height="8" fill="#f0f"/>
+</svg>
