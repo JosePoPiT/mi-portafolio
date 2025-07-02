@@ -1,0 +1,89 @@
+<div class="lang-switch">
+  <button [class.active]="lang === 'es'" (click)="setLang('es')">🇪🇸 ES</button>
+  <button [class.active]="lang === 'en'" (click)="setLang('en')">🇬🇧 EN</button>
+</div>
+
+<div class="main-content">
+  <svg class="arcade-connections" width="100%" height="100%" viewBox="0 0 1920 3000" preserveAspectRatio="none" aria-hidden="true">
+    <polyline class="arcade-line" points="960,260 960,420 960,1100" />
+    <polyline class="arcade-line" points="960,900 960,1100 960,1400" />
+    <polyline class="arcade-line" points="960,1600 960,1800 960,2100" />
+    <polyline class="arcade-line" points="960,2100 960,2500 1100,2500" />
+  </svg>
+
+  <div class="profile-card">
+    <div class="profile-info">
+      <h1 class="name">{{ t.name }}</h1>
+      <h2 class="title">{{ t.role }}</h2>
+      <p class="description">
+        {{ t.description }}
+      </p>
+    </div>
+  </div>
+
+  <div class="projects-card">
+    <div class="projects-img">
+      <img src="assets/working.png" alt="Trabajando" />
+    </div>
+    <div class="projects-list">
+      <h2 class="projects-title">{{ t.projectsTitle }}</h2>
+      <ul>
+        @for (project of projects; track project) {
+          <li>
+            <a [href]="project.url" target="_blank">{{ project.name[lang] }}</a>
+            <div class="project-desc">
+              {{ project.desc[lang] }}
+            </div>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+
+  <div class="hobbies-card">
+    <div class="hobbies-img">
+      <img src="assets/arcade-bg.png" alt="Arcade" />
+    </div>
+    <div class="hobbies-list">
+      <h2 class="hobbies-title">{{ t.hobbiesTitle }}</h2>
+      <p class="hobbies-desc">
+        {{ t.hobbiesDesc }}
+      </p>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-img">
+      <img src="assets/contact.png" alt="Contacto" />
+    </div>
+    <div class="contact-list">
+      <h2 class="contact-title">{{ t.contactTitle }}</h2>
+      <ul>
+        <li><strong>{{ t.phone }}:</strong> {{ t.contactData.phone }}</li>
+        <li><strong>{{ t.email }}:</strong> {{ t.contactData.email }}</li>
+        <li><strong>{{ t.address }}:</strong> {{ t.contactData.address }}</li>
+        <li><strong>{{ t.repo }}:</strong> <a [href]="t.contactData.repo" target="_blank">{{ t.contactData.repo }}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="objects-anim">
+  <!-- Phones -->
+  <img src="assets/svg/phone.svg" alt="phone" class="phone phone-1">
+  <img src="assets/svg/phone.svg" alt="phone" class="phone phone-2">
+  <img src="assets/svg/phone.svg" alt="phone" class="phone phone-3">
+  <img src="assets/svg/phone.svg" alt="phone" class="phone phone-4">
+  <img src="assets/svg/phone.svg" alt="phone" class="phone phone-5">
+  
+  <!-- Notebooks -->
+  <img src="assets/svg/notebook.svg" alt="notebook" class="notebook notebook-1">
+  <img src="assets/svg/notebook.svg" alt="notebook" class="notebook notebook-2">
+  <img src="assets/svg/notebook.svg" alt="notebook" class="notebook notebook-3">
+  
+  <!-- Tablets -->
+  <img src="assets/svg/tablet.svg" alt="tablet" class="tablet tablet-1">
+  <img src="assets/svg/tablet.svg" alt="tablet" class="tablet tablet-2">
+  <img src="assets/svg/tablet.svg" alt="tablet" class="tablet tablet-3">
+</div>
+

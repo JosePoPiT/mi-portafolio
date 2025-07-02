@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="32" height="32" viewBox="0 0 16 16">
+  <defs>
+    <!-- filtro glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Base del joystick -->
+  <rect x="5" y="10" width="6" height="3"
+        fill="#00ffff" stroke="#ffffff" stroke-width=".5" filter="url(#glow)"/>
+  <!-- Palanca -->
+  <rect x="7" y="6" width="2" height="4"
+        fill="#00ffff" filter="url(#glow)"/>
+  <!-- Botón superior -->
+  <circle cx="8" cy="4" r="1.5"
+          fill="#ff00ff" stroke="#ffffff" stroke-width=".5" filter="url(#glow)"/>
+</svg>
